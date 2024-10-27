@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .showcase {
     &__device {
       display: none;

@@ -9,7 +9,7 @@
   overflow-x: hidden;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .app {
     flex-direction: column;
     align-items: stretch;

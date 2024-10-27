@@ -11,7 +11,7 @@
   padding: 70px 10px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .sidebar {
     flex-direction: row;
     padding: 10px;
