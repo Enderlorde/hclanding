@@ -9,6 +9,7 @@ export default defineConfig({
     emptyOutDir: true,
   },
   plugins: [svgr({})],
+  base: "/hclanding/",
   css: {
     postcss: {
       plugins: [postcssNested],
