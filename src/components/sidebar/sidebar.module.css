@@ -10,3 +10,11 @@
 
   padding: 70px 10px;
 }
+
+@media (max-width: 426px) {
+  .sidebar {
+    flex-direction: row;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+}

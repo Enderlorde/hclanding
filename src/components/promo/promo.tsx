@@ -10,7 +10,7 @@ const Promo = () => {
     <div className={classes.promo}>
       <div className={classes.promo__info}>
         <h1>
-          Perfect moment to reserve a place in the amazing place for geeks
+          Perfect moment to reserve a place in the amazing community for geeks
         </h1>
 
         <span>

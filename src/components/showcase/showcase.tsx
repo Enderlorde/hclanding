@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect";
 
 import Mobile from "./images/mobile.png";
 import Tablet from "./images/tablet.png";
@@ -10,6 +11,14 @@ import classes from "./showcase.module.css";
 const Showcase = () => {
   const [currentDevice, setDevice] = React.useState(Desktop);
 
+  React.useEffect(() => {
+    console.log(isMobile);
+
+    if (isMobile) {
+      setDevice(Mobile);
+    }
+  }, []);
+
   return (
     <div className={classes.showcase}>
       <div className={classes.showcase__wrapper}>
@@ -17,7 +26,7 @@ const Showcase = () => {
           <img src={currentDevice} alt="" className={classes.showcase__image} />
         </div>
 
-        <ul className={classes.showcase__switcher}>
+        {/*    <ul className={classes.showcase__switcher}>
           <li
             className={`${classes.showcase__switch} ${classes.showcase__switch_color_red}`}
           ></li>
@@ -30,7 +39,7 @@ const Showcase = () => {
           <li
             className={`${classes.showcase__switch} ${classes.showcase__switch_color_yellow}`}
           ></li>
-        </ul>
+        </ul> */}
       </div>
 
       <ul className={classes.showcase__devices}>

@@ -1,0 +1,22 @@
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #3e4255;
+    border-radius: 10px;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

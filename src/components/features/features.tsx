@@ -1,39 +1,45 @@
 import * as React from "react";
 
+import Chat from "./images/chat.svg?react";
+import Grade from "./images/grade.svg?react";
+import Hat from "./images/hat.svg?react";
+import Leader from "./images/leader.svg?react";
+import Verified from "./images/verified.svg?react";
+
 import classes from "./features.module.css";
 
 const Features = () => {
   return (
     <ul className={classes.features}>
       <li className={classes.features__feature}>
-        <div className={classes.feature__icon}>
-          <img src="" alt="" />
+        <div className={classes.features__icon}>
+          <Hat />
         </div>
         <p>Unique study experience</p>
       </li>
       <li className={classes.features__feature}>
-        <div className={classes.feature__icon}>
-          <img src="" alt="" />
+        <div className={classes.features__icon}>
+          <Chat />
         </div>
-        <p>Unique study experience</p>
+        <p>Connect with like-minded people</p>
       </li>
       <li className={classes.features__feature}>
-        <div className={classes.feature__icon}>
-          <img src="" alt="" />
+        <div className={classes.features__icon}>
+          <Grade />
         </div>
-        <p>Unique study experience</p>
+        <p>Improve your skills while proving them</p>
       </li>
       <li className={classes.features__feature}>
-        <div className={classes.feature__icon}>
-          <img src="" alt="" />
+        <div className={classes.features__icon}>
+          <Leader />
         </div>
-        <p>Unique study experience</p>
+        <p>Get rewarded for your solutions</p>
       </li>
       <li className={classes.features__feature}>
-        <div className={classes.feature__icon}>
-          <img src="" alt="" />
+        <div className={classes.features__icon}>
+          <Verified />
         </div>
-        <p>Unique study experience</p>
+        <p>Reliable Skill Testing System</p>
       </li>
     </ul>
   );

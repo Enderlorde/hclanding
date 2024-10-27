@@ -17,3 +17,9 @@
     }
   }
 }
+
+@media (max-width: 426px) {
+  .socials {
+    flex-direction: row;
+  }
+}

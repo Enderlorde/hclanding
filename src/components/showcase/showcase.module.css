@@ -96,3 +96,11 @@
     }
   }
 }
+
+@media (max-width: 426px) {
+  .showcase {
+    &__device {
+      display: none;
+    }
+  }
+}
