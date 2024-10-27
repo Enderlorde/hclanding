@@ -1,0 +1,19 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  list-style: none;
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 30px;
+
+    path {
+      fill: #b6ccda;
+    }
+  }
+}

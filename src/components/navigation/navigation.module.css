@@ -1,0 +1,35 @@
+.navigation {
+  &__list {
+    display: flex;
+    gap: 90px;
+
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+    font-family: "Poppins";
+    font-size: 18px;
+
+    height: 36px;
+
+    padding: 5px 32px;
+    background-color: transparent;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+
+    text-decoration: none;
+
+    &_state {
+      &_active {
+        background-color: #fff;
+
+        color: #b6ccda;
+      }
+    }
+  }
+}

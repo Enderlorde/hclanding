@@ -1,0 +1,98 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  min-width: 650px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__image {
+    height: 300px;
+  }
+
+  &__switcher {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    list-style: none;
+  }
+
+  &__switch {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+
+    &_color {
+      &_yellow {
+        background-color: yellow;
+      }
+      &_red {
+        background-color: red;
+      }
+      &_blue {
+        background-color: blue;
+      }
+      &_green {
+        background-color: green;
+      }
+    }
+  }
+
+  &__devices {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 70px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    &_tablet {
+      background-color: #434558;
+
+      & > img {
+        width: 80px;
+        transform: translateY(-30px);
+      }
+    }
+
+    &_mobile {
+      background-color: #6addcc;
+      & > img {
+        width: 60px;
+        transform: translateY(-30px);
+      }
+    }
+
+    &_desktop {
+      background-color: #f9cdc4;
+      & > img {
+        width: 120px;
+        transform: translateY(-50px);
+      }
+    }
+  }
+}

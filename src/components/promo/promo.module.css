@@ -1,0 +1,15 @@
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 80px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    font-size: 30px;
+  }
+}
