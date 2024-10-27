@@ -23,6 +23,7 @@
     "vite-plugin-svgr": "^4.2.0"
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   }
 }
