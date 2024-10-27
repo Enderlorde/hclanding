@@ -17,7 +17,7 @@ const router = createHashRouter([
     element: <Content />,
     children: [
       {
-        path: "showcase/",
+        index: true,
         element: <Promo />,
       },
       {

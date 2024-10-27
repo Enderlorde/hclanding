@@ -23,7 +23,7 @@ const Navigation = () => {
         </li>
         <li className={classes.navigation__item}>
           <NavLink
-            to={`/showcase/`}
+            to={`/`}
             className={({ isActive, isPending }) =>
               isPending
                 ? `${classes.navigation__link} ${classes.navigation__link_state_pending}`
