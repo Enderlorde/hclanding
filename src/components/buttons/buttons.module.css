@@ -12,4 +12,20 @@
   background-color: transparent;
 
   cursor: pointer;
+
+  &_type {
+    &_submit {
+      background-color: #0863cd;
+      border: none;
+
+      color: #fff;
+    }
+
+    &_reset {
+      background-color: transparent;
+
+      border-color: #777777;
+      color: #777777;
+    }
+  }
 }
