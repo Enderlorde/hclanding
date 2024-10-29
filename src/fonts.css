@@ -9,3 +9,8 @@
   src: url("./fonts/Poppins-Medium.ttf");
   font-weight: medium;
 }
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("./fonts/Orbitron.ttf");
+}

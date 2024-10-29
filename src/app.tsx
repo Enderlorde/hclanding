@@ -1,43 +1,40 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
 
-import Sidebar from "./components/sidebar/sidebar";
-import Content from "./components/content/content";
-import Subscribe from "./components/subscribe/subscribe";
-import Promo from "./components/promo/promo";
-import Features from "./components/features/features";
+import { Banner } from "./components/banner/banner";
+import { Highlight } from "./components/highlight/highlight";
 import Band from "./components/band/band";
 
 import classes from "./app.module.css";
-
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <Content />,
-    children: [
-      {
-        index: true,
-        element: <Promo />,
-      },
-      {
-        path: "subscribe/",
-        element: <Subscribe />,
-      },
-      {
-        path: "features/",
-        element: <Features />,
-      },
-    ],
-  },
-]);
+import { Partners } from "./components/partners/partners";
+import { InTouch } from "./components/inTouch/inTouch";
 
 const App = () => {
   return (
     <div className={classes.app}>
       <Band />
-      <Sidebar />
-      <RouterProvider router={router} />
+      <div
+        className={`${classes.app__wrapper} ${classes.app__wrapper_type_banner}`}
+      >
+        <Banner />
+      </div>
+      <div className={`${classes.app__wrapper}`}>
+        <Partners />
+      </div>
+      <div
+        className={`${classes.app__wrapper} ${classes.app__wrapper_type_highlight}`}
+      >
+        <Highlight />
+      </div>
+
+      <div
+        className={`${classes.app__wrapper} ${classes.app__wrapper_type_inTouch}`}
+      >
+        <InTouch />
+      </div>
+      <div
+        className={`${classes.app__wrapper} ${classes.app__wrapper_type_footer}`}
+      ></div>
     </div>
   );
 };
