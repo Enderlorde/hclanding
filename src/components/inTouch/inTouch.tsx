@@ -1,13 +1,14 @@
 import * as React from "react";
 
 import classes from "./inTouch.module.css";
+import { Title } from "../title/title";
 
 export const InTouch: React.FC<{}> = () => {
   const [app, setApp]: any[] = React.useState();
 
   return (
     <div className={classes.inTouch}>
-      <h2>Contact us</h2>
+      <Title>Contact us</Title>
 
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates

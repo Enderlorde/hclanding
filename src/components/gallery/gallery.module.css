@@ -1,0 +1,38 @@
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 600px;
+  width: 100%;
+
+  &__slider {
+    z-index: 3;
+    width: 757px;
+    top: 17px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/display.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__card {
+    width: 300px;
+
+    & > img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}

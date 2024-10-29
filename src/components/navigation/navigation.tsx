@@ -1,5 +1,4 @@
 import * as React from "react";
-import { NavLink } from "react-router-dom";
 
 import classes from "./navigation.module.css";
 
@@ -8,46 +7,29 @@ const Navigation = () => {
     <nav className={classes.navigation}>
       <ul className={classes.navigation__list}>
         <li className={classes.navigation__item}>
-          <NavLink
-            to={`/features`}
-            className={({ isActive, isPending }) =>
-              isPending
-                ? `${classes.navigation__link} ${classes.navigation__link_state_pending}`
-                : isActive
-                ? `${classes.navigation__link} ${classes.navigation__link_state_active}`
-                : `${classes.navigation__link}`
-            }
-          >
+          <a className={classes.navigation__link} href={`#promo`}>
             Features
-          </NavLink>
+          </a>
         </li>
         <li className={classes.navigation__item}>
-          <NavLink
-            to={`/`}
-            className={({ isActive, isPending }) =>
-              isPending
-                ? `${classes.navigation__link} ${classes.navigation__link_state_pending}`
-                : isActive
-                ? `${classes.navigation__link} ${classes.navigation__link_state_active}`
-                : `${classes.navigation__link}`
-            }
-          >
-            Showcase
-          </NavLink>
+          <a className={classes.navigation__link} href={`#partners`}>
+            Partners
+          </a>
         </li>
         <li className={classes.navigation__item}>
-          <NavLink
-            to={`/subscribe/`}
-            className={({ isActive, isPending }) =>
-              isPending
-                ? `${classes.navigation__link} ${classes.navigation__link_state_pending}`
-                : isActive
-                ? `${classes.navigation__link} ${classes.navigation__link_state_active}`
-                : `${classes.navigation__link}`
-            }
-          >
-            Subscribe
-          </NavLink>
+          <a className={classes.navigation__link} href={`#features`}>
+            Features
+          </a>
+        </li>
+        <li className={classes.navigation__item}>
+          <a className={classes.navigation__link} href={`#team`}>
+            Our team
+          </a>
+        </li>
+        <li className={classes.navigation__item}>
+          <a className={classes.navigation__link} href={`#intouch`}>
+            Get in touch
+          </a>
         </li>
       </ul>
     </nav>

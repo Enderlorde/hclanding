@@ -6,6 +6,7 @@ import Chat from "./images/chat.svg?react";
 import Mobile from "./images/mobile.png";
 
 import classes from "./highlight.module.css";
+import { Title } from "../title/title";
 
 export const Highlight: React.FC<{}> = () => {
   const cardVariants: Variants = {
@@ -29,7 +30,7 @@ export const Highlight: React.FC<{}> = () => {
   };
   return (
     <div className={classes.highlight}>
-      <h2 className={classes.highlight__title}>Features</h2>
+      <Title>Features</Title>
 
       <p className={classes.highlight__message}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sunt illum

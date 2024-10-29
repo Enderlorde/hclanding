@@ -8,26 +8,43 @@ import Band from "./components/band/band";
 import classes from "./app.module.css";
 import { Partners } from "./components/partners/partners";
 import { InTouch } from "./components/inTouch/inTouch";
+import { Team } from "./components/team/team";
+import Header from "./components/header/header";
+import { Up } from "./components/up/up";
+import { Gallery } from "./components/gallery/gallery";
 
 const App = () => {
   return (
     <div className={classes.app}>
       <Band />
+      <Up />
       <div
+        id="promo"
         className={`${classes.app__wrapper} ${classes.app__wrapper_type_banner}`}
       >
+        <Header />
         <Banner />
       </div>
-      <div className={`${classes.app__wrapper}`}>
+      <div id="partners" className={`${classes.app__wrapper}`}>
         <Partners />
       </div>
       <div
+        id="features"
         className={`${classes.app__wrapper} ${classes.app__wrapper_type_highlight}`}
       >
         <Highlight />
       </div>
-
       <div
+        id="screehots"
+        className={`${classes.app__wrapper} ${classes.app__wrapper_type_screenshot}`}
+      >
+        <Gallery />
+      </div>
+      <div id="team" className={`${classes.app__wrapper}`}>
+        <Team />
+      </div>
+      <div
+        id="intouch"
         className={`${classes.app__wrapper} ${classes.app__wrapper_type_inTouch}`}
       >
         <InTouch />
