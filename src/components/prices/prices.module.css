@@ -1,0 +1,184 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px;
+
+  gap: 30px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+
+    width: 100%;
+  }
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 50px;
+
+  background-color: #fff;
+
+  transition: all 0.3s ease-in-out;
+
+  &:first-of-type {
+    border-radius: 26px 0 0 26px;
+  }
+
+  &:last-of-type {
+    border-radius: 0 26px 26px 0;
+  }
+
+  font-family: "Poppins";
+
+  &__value {
+    display: block;
+    color: #231d4f;
+    font-size: 2em;
+    position: relative;
+
+    &_style {
+      &_montly {
+        &::after {
+          content: "/month";
+
+          font-size: 0.5em;
+          color: #848199;
+        }
+      }
+
+      &_yearly {
+        &::after {
+          content: "/year";
+
+          font-size: 0.5em;
+          color: #848199;
+        }
+      }
+
+      &_free {
+        text-decoration: line-through;
+
+        &::after {
+          text-decoration: dashed;
+        }
+
+        &::before {
+          content: "Free for first 1000 users";
+
+          display: block;
+          position: absolute;
+          top: 0%;
+          right: 0;
+          width: 110px;
+
+          background-image: url("./images/sticker.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          padding: 40px;
+
+          transform: rotate(-36deg);
+
+          font-family: "RockSalt";
+          font-size: 0.4em;
+          color: #002b59;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.8em;
+    color: #231d4f;
+  }
+
+  &__message {
+    font-size: 0.8em;
+    color: #848199;
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    list-style-image: url("./images/check.svg");
+
+    color: #848199;
+  }
+
+  &__button {
+    display: block;
+
+    width: 100%;
+
+    height: 44px;
+    border-radius: 22px;
+
+    background-color: #fef5fb;
+
+    border: 0;
+
+    color: #f496d1;
+    font-family: "Poppins";
+
+    cursor: pointer;
+  }
+
+  &:hover,
+  &_state_active {
+    transform: translateY(-50px);
+
+    background-color: #5243c2;
+
+    .price__value {
+      color: #fff;
+
+      &::after {
+        color: #fff;
+      }
+    }
+
+    .price__title {
+      color: #fff;
+    }
+
+    .price__message {
+      color: #fff;
+    }
+
+    .price__points {
+      list-style-image: url("./images/check_white.svg");
+      color: #fff;
+    }
+
+    .price__button {
+      color: #5243c2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .prices__list {
+    flex-direction: column;
+  }
+
+  .price {
+    &:first-of-type {
+      border-radius: 0 0 0 0;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0 0 0;
+    }
+  }
+}

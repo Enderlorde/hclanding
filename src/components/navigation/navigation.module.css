@@ -1,7 +1,7 @@
 .navigation {
   &__list {
     display: flex;
-    gap: 90px;
+    gap: 50px;
 
     list-style: none;
   }

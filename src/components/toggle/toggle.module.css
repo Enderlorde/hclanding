@@ -1,0 +1,31 @@
+.toggle {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  background-color: #fff;
+
+  height: 44px;
+  border-radius: 22px;
+
+  &__position {
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+    height: 100%;
+    font-family: "Poppins";
+
+    color: #848199;
+
+    border-radius: 22px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &_state_active {
+      background-color: #5243c2;
+      color: #f496d1;
+    }
+  }
+}

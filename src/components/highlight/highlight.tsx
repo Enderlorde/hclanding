@@ -33,8 +33,8 @@ export const Highlight: React.FC<{}> = () => {
       <Title>Features</Title>
 
       <p className={classes.highlight__message}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sunt illum
-        veniam libero sapiente modi?
+        Our platform may surprise you with its wide functionality, but there are
+        basics we rely on.
       </p>
 
       <div className={`${classes.highlight__features} ${classes.features}`}>
@@ -46,10 +46,10 @@ export const Highlight: React.FC<{}> = () => {
           className={`${classes.features__feature}`}
         >
           <div className={`${classes.features__wrapper}`}>
-            <h3>Lorem, ipsum.</h3>
+            <h3>Large database of tasks</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              animi!
+              Challenges created by experienced users of our platform and large
+              companies reflect relevant industry issues.
             </p>
           </div>
           <div className={`${classes.features__icon}`}>
@@ -65,10 +65,10 @@ export const Highlight: React.FC<{}> = () => {
           className={`${classes.features__feature}`}
         >
           <div className={`${classes.features__wrapper}`}>
-            <h3>Lorem, ipsum.</h3>
+            <h3>Large list of programming languages.</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              animi!
+              Users are provided with a wide selection of languages to practice
+              approaches and find new ones.
             </p>
           </div>
           <div className={`${classes.features__icon}`}>
@@ -84,10 +84,10 @@ export const Highlight: React.FC<{}> = () => {
           className={`${classes.features__feature}`}
         >
           <div className={`${classes.features__wrapper}`}>
-            <h3>Lorem, ipsum.</h3>
+            <h3>Gamification.</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              animi!
+              Tournaments and competitions make learning more exciting and
+              motivating
             </p>
           </div>
 
@@ -114,10 +114,10 @@ export const Highlight: React.FC<{}> = () => {
           className={`${classes.features__feature} ${classes.features__feature_type_reverse}`}
         >
           <div className={`${classes.features__wrapper}`}>
-            <h3>Lorem, ipsum.</h3>
+            <h3>Feedback and discussions.</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              animi!
+              Discussing issues with the community helps to better understand
+              the material and find solutions to non-standard problems.
             </p>
           </div>
           <div className={`${classes.features__icon}`}>
@@ -133,10 +133,10 @@ export const Highlight: React.FC<{}> = () => {
           className={`${classes.features__feature} ${classes.features__feature_type_reverse}`}
         >
           <div className={`${classes.features__wrapper}`}>
-            <h3>Lorem, ipsum.</h3>
+            <h3>Real tasks.</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              animi!
+              Tests based on real cases allow users to prepare for technical
+              interviews.
             </p>
           </div>
           <div className={`${classes.features__icon}`}>
@@ -152,11 +152,8 @@ export const Highlight: React.FC<{}> = () => {
           className={`${classes.features__feature} ${classes.features__feature_type_reverse}`}
         >
           <div className={`${classes.features__wrapper}`}>
-            <h3>Lorem, ipsum.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              animi!
-            </p>
+            <h3>Adaptive progression system.</h3>
+            <p>Tasks for users are selected based on their experience.</p>
           </div>
           <div className={`${classes.features__icon}`}>
             <Chat />

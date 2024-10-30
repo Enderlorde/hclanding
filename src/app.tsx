@@ -12,6 +12,7 @@ import { Team } from "./components/team/team";
 import Header from "./components/header/header";
 import { Up } from "./components/up/up";
 import { Gallery } from "./components/gallery/gallery";
+import { Prices } from "./components/prices/prices";
 
 const App = () => {
   return (
@@ -35,14 +36,21 @@ const App = () => {
         <Highlight />
       </div>
       <div
-        id="screehots"
+        id="gallery"
         className={`${classes.app__wrapper} ${classes.app__wrapper_type_screenshot}`}
       >
         <Gallery />
       </div>
+      <div
+        id="prices"
+        className={`${classes.app__wrapper} ${classes.app__wrapper_type_prices}`}
+      >
+        <Prices />
+      </div>
       <div id="team" className={`${classes.app__wrapper}`}>
         <Team />
       </div>
+
       <div
         id="intouch"
         className={`${classes.app__wrapper} ${classes.app__wrapper_type_inTouch}`}

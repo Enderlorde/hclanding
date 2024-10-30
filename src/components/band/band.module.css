@@ -19,6 +19,9 @@
 
   filter: drop-shadow(5px 5px 5px #00000077);
 
+  text-decoration: none;
+  color: #000;
+
   &__wrapper {
     position: absolute;
     top: 0;

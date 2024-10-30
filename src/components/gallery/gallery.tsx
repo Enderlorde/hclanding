@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import classes from "./gallery.module.css";
+import { Title } from "../title/title";
 
 export const Gallery = () => {
   const settings = {
@@ -25,6 +26,10 @@ export const Gallery = () => {
   };
   return (
     <div className={classes.gallery}>
+      <Title>Screenshots</Title>
+
+      <p>A small preview of our application</p>
+
       <Slider {...settings}>
         <div className={classes.gallery__card}>
           <img src={Community} alt="" />

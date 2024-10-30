@@ -5,7 +5,9 @@ import classes from "./band.module.css";
 const Band = () => {
   return (
     <div className={classes.band__wrapper}>
-      <div className={classes.band}> Only first 1000 users</div>
+      <a href="#prices" className={classes.band}>
+        Claim your free premium!
+      </a>
     </div>
   );
 };

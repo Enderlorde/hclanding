@@ -11,6 +11,12 @@
 }
 
 @font-face {
+  font-family: "RockSalt";
+  src: url("./fonts/RockSalt.ttf");
+  font-weight: medium;
+}
+
+@font-face {
   font-family: "Orbitron";
   src: url("./fonts/Orbitron.ttf");
 }

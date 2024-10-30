@@ -22,6 +22,16 @@ const Navigation = () => {
           </a>
         </li>
         <li className={classes.navigation__item}>
+          <a className={classes.navigation__link} href={`#prices`}>
+            Pricing
+          </a>
+        </li>
+        <li className={classes.navigation__item}>
+          <a className={classes.navigation__link} href={`#gallery`}>
+            Gallery
+          </a>
+        </li>
+        <li className={classes.navigation__item}>
           <a className={classes.navigation__link} href={`#team`}>
             Our team
           </a>

@@ -9,10 +9,9 @@ import Mobile from "./images/mobile.png";
 export const Banner: React.FC<{}> = () => {
   return (
     <div className={classes.banner}>
-      <h1 className={classes.banner__title}>Lorem, ipsum dolor.</h1>
+      <h1 className={classes.banner__title}>Inspiration through learning</h1>
       <p className={classes.banner__message}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
-        debitis officiis!
+        An innovative platform that turns experience into a resource
       </p>
       <motion.div
         initial={{ opacity: 0, y: 300 }}
