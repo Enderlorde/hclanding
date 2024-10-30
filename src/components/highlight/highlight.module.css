@@ -83,3 +83,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .features {
+    height: auto;
+    flex-wrap: nowrap;
+
+    &__feature {
+      width: auto;
+    }
+  }
+}

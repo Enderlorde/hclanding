@@ -15,7 +15,10 @@
 }
 
 @media (max-width: 768px) {
-  &__slider {
-    width: 100%;
+  .team {
+    &__slider {
+      width: 100%;
+      overflow: hidden;
+    }
   }
 }
